@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A K Biplob</title>
+    <link
+      rel="shortcut icon"
+      href="https://qph.cf2.quoracdn.net/main-qimg-b3b032a4216bcd68feb646127c8c875a"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container"></div>
+    <img src="menu.png" id="menuIcon" />
+
+    <div class="menu_box" id="menuBox">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">A K Biplob</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      let menuBox = document.getElementById("menuBox");
+      let menuIcon = document.getElementById("menuIcon");
+
+      menuIcon.onclick = function () {
+        menuBox.classList.toggle("open-menu");
+
+        if (menuBox.classList.contains("open-menu")) {
+          menuIcon.src = "close.png"
+        } else {
+          menuIcon.src = "menu.png"
+        }
+      };
+    </script>
+  </body>
+</html>
